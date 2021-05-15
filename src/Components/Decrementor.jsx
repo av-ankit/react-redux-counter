@@ -7,7 +7,7 @@ const Decrementor = () => {
   const [decrementValue, setdecrementValue] = useState(1);
   const dispatch = useDispatch();
 
-  const handleChange = (e) => {
+  const handleDecrementor = (e) => {
     setdecrementValue(+e.target.value);
   };
   return (
@@ -19,7 +19,7 @@ const Decrementor = () => {
         Decrement : {decrementValue}
       </Button>
       <br />
-      <input type="range" value={decrementValue} onChange={handleChange} />
+      <input type="range" value={decrementValue} onChange={handleDecrementor} />
       <br />
       <label>Select decrement value from above</label>
     </div>
